@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Salesforcenew">
+    
+    <listeners>
+        <listener class-name="com.salesforcenew.utilities.Reporting"/>
+    </listeners>
+    
+    <test name="App">
+       
+            <classes>
+                <class name="com.salesforcenew.testCases.LoginTest"/>
+                <parameter name="browser" value="chrome"/>
+            
+       </classes>
+    </test>
+</suite>

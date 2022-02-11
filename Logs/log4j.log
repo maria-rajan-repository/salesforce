@@ -1,0 +1,5 @@
+2022-02-08 23:53:33 INFO  Log:11 - =====================================loginTest TEST START=========================================
+2022-02-08 23:53:33 INFO  Log:22 - user is going to click on SignIn
+2022-02-08 23:53:33 INFO  BaseClass:31 - URL is opened
+2022-02-08 23:53:34 INFO  BaseClass:35 - entered username
+2022-02-08 23:53:34 INFO  BaseClass:37 - entered password
