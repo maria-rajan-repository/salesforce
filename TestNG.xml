@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Salesforce">
+	<test name="Login test cases">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.salesforcenew.testCases.LoginTest" />
+			<class name="com.salesforcenew.testCases.LeadsTests" />
+			<class name="com.salesforcenew.testCases.BaseClass" />
+			<class name="com.salesforcenew.testCases.HomeTests" />
+			<class name="com.salesforcenew.testCases.NewContactTests" />
+			<class name="com.salesforcenew.testCases.OppertunityTest" />
+			<class name="com.salesforcenew.testCases.RandonScenariosTests" />
+			<class name="com.salesforcenew.testCases.ApplicationTest" />
+		</classes>
+	</test>
+
+</suite>
