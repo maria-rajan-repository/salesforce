@@ -1,0 +1,1747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="14" total="52" passed="26" failed="8" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-13T14:00:35 EST" name="Salesforce" finished-at="2022-02-13T14:07:07 EST" duration-ms="391812">
+    <groups>
+    </groups>
+    <test started-at="2022-02-13T14:00:35 EST" name="Login test cases" finished-at="2022-02-13T14:07:07 EST" duration-ms="391812">
+      <class name="com.salesforcenew.testCases.ApplicationTest">
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:05:50 EST" name="launchWeb" finished-at="2022-02-13T14:05:51 EST" duration-ms="1241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="createAccReport14()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:05:51 EST" name="createAccReport14" finished-at="2022-02-13T14:06:00 EST" duration-ms="9652" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//body[1]/div[16]/ul[1]/li[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[2]/td[4]/a[1]"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58963}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2583ac1711b2d3a85151149303b8c8c
+*** Element info: {Using=xpath, value=//body[1]/div[16]/ul[1]/li[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[2]/td[4]/a[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body[1]/div[16]/ul[1]/li[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[2]/td[4]/a[1]"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58963}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2583ac1711b2d3a85151149303b8c8c
+*** Element info: {Using=xpath, value=//body[1]/div[16]/ul[1]/li[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[2]/td[4]/a[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.salesforcenew.testCases.ApplicationTest.createAccReport14(ApplicationTest.java:184)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccReport14 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:00 EST" name="getResult" finished-at="2022-02-13T14:06:00 EST" duration-ms="105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAccReport14 status=FAILURE method=ApplicationTest.createAccReport14()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:00 EST" name="tearDown" finished-at="2022-02-13T14:06:05 EST" duration-ms="4152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:05 EST" name="launchWeb" finished-at="2022-02-13T14:06:06 EST" duration-ms="1089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="createAnAccount10()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:06 EST" name="createAnAccount10" finished-at="2022-02-13T14:06:14 EST" duration-ms="8430" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='acc2']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a339d9c0bc7d425b707dbd084d4cb8d5
+*** Element info: {Using=xpath, value=//input[@id='acc2']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='acc2']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a339d9c0bc7d425b707dbd084d4cb8d5
+*** Element info: {Using=xpath, value=//input[@id='acc2']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.sendKeys(Unknown Source)
+at com.salesforcenew.testCases.ApplicationTest.createAnAccount10(ApplicationTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAnAccount10 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:14 EST" name="getResult" finished-at="2022-02-13T14:06:14 EST" duration-ms="124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAnAccount10 status=FAILURE method=ApplicationTest.createAnAccount10()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:14 EST" name="tearDown" finished-at="2022-02-13T14:06:18 EST" duration-ms="4145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:18 EST" name="launchWeb" finished-at="2022-02-13T14:06:20 EST" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="createNewView11()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:20 EST" name="createNewView11" finished-at="2022-02-13T14:06:27 EST" duration-ms="7347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewView11 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:27 EST" name="getResult" finished-at="2022-02-13T14:06:27 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewView11 status=SUCCESS method=ApplicationTest.createNewView11()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:27 EST" name="tearDown" finished-at="2022-02-13T14:06:27 EST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:27 EST" name="launchWeb" finished-at="2022-02-13T14:06:28 EST" duration-ms="1213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="editView12()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:28 EST" name="editView12" finished-at="2022-02-13T14:06:53 EST" duration-ms="24690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editView12 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:53 EST" name="getResult" finished-at="2022-02-13T14:06:53 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editView12 status=SUCCESS method=ApplicationTest.editView12()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:53 EST" name="tearDown" finished-at="2022-02-13T14:06:53 EST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:53 EST" name="launchWeb" finished-at="2022-02-13T14:06:54 EST" duration-ms="1222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="mergeAccounts13()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:06:54 EST" name="mergeAccounts13" finished-at="2022-02-13T14:07:07 EST" duration-ms="12379" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='save']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59222}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 37a1a30ea2172f2bcc2551ee43c18743
+*** Element info: {Using=xpath, value=//input[@name='save']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='save']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59222}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 37a1a30ea2172f2bcc2551ee43c18743
+*** Element info: {Using=xpath, value=//input[@name='save']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.salesforcenew.testCases.ApplicationTest.mergeAccounts13(ApplicationTest.java:150)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mergeAccounts13 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:07:07 EST" name="getResult" finished-at="2022-02-13T14:07:07 EST" duration-ms="140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mergeAccounts13 status=FAILURE method=ApplicationTest.mergeAccounts13()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.ApplicationTest@1d2adfbe]" started-at="2022-02-13T14:07:07 EST" name="tearDown" finished-at="2022-02-13T14:07:07 EST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.salesforcenew.testCases.ApplicationTest -->
+      <class name="com.salesforcenew.testCases.NewContactTests">
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:19 EST" name="launchWeb" finished-at="2022-02-13T14:02:20 EST" duration-ms="1056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="checkCancelButton31()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:20 EST" name="checkCancelButton31" finished-at="2022-02-13T14:02:30 EST" duration-ms="9643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCancelButton31 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:30 EST" name="getResult" finished-at="2022-02-13T14:02:30 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkCancelButton31 status=SUCCESS method=NewContactTests.checkCancelButton31()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:30 EST" name="tearDown" finished-at="2022-02-13T14:02:30 EST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:30 EST" name="launchWeb" finished-at="2022-02-13T14:02:31 EST" duration-ms="1138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="checkErrorMessege30()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:31 EST" name="checkErrorMessege30" finished-at="2022-02-13T14:02:39 EST" duration-ms="7558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkErrorMessege30 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:39 EST" name="tearDown" finished-at="2022-02-13T14:02:39 EST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:39 EST" name="getResult" finished-at="2022-02-13T14:02:39 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkErrorMessege30 status=SUCCESS method=NewContactTests.checkErrorMessege30()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:39 EST" name="launchWeb" finished-at="2022-02-13T14:02:40 EST" duration-ms="1218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="checkRecentlyCreatedContact27()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:40 EST" name="checkRecentlyCreatedContact27" finished-at="2022-02-13T14:02:50 EST" duration-ms="9962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRecentlyCreatedContact27 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:50 EST" name="tearDown" finished-at="2022-02-13T14:02:54 EST" duration-ms="4172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:50 EST" name="getResult" finished-at="2022-02-13T14:02:50 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkRecentlyCreatedContact27 status=SUCCESS method=NewContactTests.checkRecentlyCreatedContact27()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:54 EST" name="launchWeb" finished-at="2022-02-13T14:02:55 EST" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="checkSaveNewButton32()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:02:55 EST" name="checkSaveNewButton32" finished-at="2022-02-13T14:03:04 EST" duration-ms="9182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSaveNewButton32 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:04 EST" name="tearDown" finished-at="2022-02-13T14:03:09 EST" duration-ms="4176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:04 EST" name="getResult" finished-at="2022-02-13T14:03:04 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSaveNewButton32 status=SUCCESS method=NewContactTests.checkSaveNewButton32()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:09 EST" name="launchWeb" finished-at="2022-02-13T14:03:10 EST" duration-ms="1023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="contactPage29()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:10 EST" name="contactPage29" finished-at="2022-02-13T14:03:16 EST" duration-ms="6779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactPage29 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:16 EST" name="getResult" finished-at="2022-02-13T14:03:16 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=contactPage29 status=SUCCESS method=NewContactTests.contactPage29()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:16 EST" name="tearDown" finished-at="2022-02-13T14:03:21 EST" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:21 EST" name="launchWeb" finished-at="2022-02-13T14:03:22 EST" duration-ms="1012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="createNewContact25()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:22 EST" name="createNewContact25" finished-at="2022-02-13T14:03:29 EST" duration-ms="7540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContact25 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:29 EST" name="getResult" finished-at="2022-02-13T14:03:29 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewContact25 status=SUCCESS method=NewContactTests.createNewContact25()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:29 EST" name="tearDown" finished-at="2022-02-13T14:03:29 EST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:29 EST" name="launchWeb" finished-at="2022-02-13T14:03:30 EST" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="createNewView26()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:30 EST" name="createNewView26" finished-at="2022-02-13T14:03:41 EST" duration-ms="11266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewView26 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:41 EST" name="getResult" finished-at="2022-02-13T14:03:41 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewView26 status=SUCCESS method=NewContactTests.createNewView26()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:41 EST" name="tearDown" finished-at="2022-02-13T14:03:42 EST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:42 EST" name="launchWeb" finished-at="2022-02-13T14:03:43 EST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="myContacts28()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:43 EST" name="myContacts28" finished-at="2022-02-13T14:03:51 EST" duration-ms="8107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myContacts28 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:51 EST" name="getResult" finished-at="2022-02-13T14:03:51 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=myContacts28 status=SUCCESS method=NewContactTests.myContacts28()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.NewContactTests@36bc55de]" started-at="2022-02-13T14:03:51 EST" name="tearDown" finished-at="2022-02-13T14:03:55 EST" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.salesforcenew.testCases.NewContactTests -->
+      <class name="com.salesforcenew.testCases.HomeTests">
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:14 EST" name="launchWeb" finished-at="2022-02-13T14:02:15 EST" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="developersConsole8()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:15 EST" name="developersConsole8" finished-at="2022-02-13T14:02:19 EST" duration-ms="4475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- developersConsole8 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="getResult" finished-at="2022-02-13T14:02:19 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=developersConsole8 status=SUCCESS method=HomeTests.developersConsole8()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="tearDown" finished-at="2022-02-13T14:02:19 EST" duration-ms="15" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.salesforcenew.testCases.BaseClass.tearDown(BaseClass.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="launchWeb" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939737" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="handleLogOut9()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="handleLogOut9" finished-at="2022-02-13T14:02:19 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.salesforcenew.testCases.BaseClass.tearDown(BaseClass.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleLogOut9 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="getResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939740" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939740" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="handleMyProfile6()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="handleMyProfile6" finished-at="2022-02-13T14:02:19 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.salesforcenew.testCases.BaseClass.tearDown(BaseClass.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleMyProfile6 -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="launchWeb" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939741" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="getResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939743" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939744" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="mySettings7()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="mySettings7" finished-at="2022-02-13T14:02:19 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.salesforcenew.testCases.BaseClass.tearDown(BaseClass.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySettings7 -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="launchWeb" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939745" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="getResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939748" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939748" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="launchWeb" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939749" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="userMenuDropDown5()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="userMenuDropDown5" finished-at="2022-02-13T14:02:19 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e979d24049b788f9e6a4e1d585740f8a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at com.salesforcenew.testCases.BaseClass.tearDown(BaseClass.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userMenuDropDown5 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939751" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.HomeTests@1189dd52]" started-at="2022-02-13T14:02:19 EST" name="getResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1644778939751" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.salesforcenew.testCases.HomeTests -->
+      <class name="com.salesforcenew.testCases.OppertunityTest">
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:03:55 EST" name="launchWeb" finished-at="2022-02-13T14:03:56 EST" duration-ms="1045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="createNewOpty16()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:03:56 EST" name="createNewOpty16" finished-at="2022-02-13T14:04:08 EST" duration-ms="12387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewOpty16 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:08 EST" name="getResult" finished-at="2022-02-13T14:04:08 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewOpty16 status=SUCCESS method=OppertunityTest.createNewOpty16()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:08 EST" name="tearDown" finished-at="2022-02-13T14:04:13 EST" duration-ms="4155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:13 EST" name="launchWeb" finished-at="2022-02-13T14:04:14 EST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="opprtunity15()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:14 EST" name="opprtunity15" finished-at="2022-02-13T14:04:20 EST" duration-ms="6591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opprtunity15 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:20 EST" name="tearDown" finished-at="2022-02-13T14:04:24 EST" duration-ms="4142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:20 EST" name="getResult" finished-at="2022-02-13T14:04:20 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=opprtunity15 status=SUCCESS method=OppertunityTest.opprtunity15()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:24 EST" name="launchWeb" finished-at="2022-02-13T14:04:25 EST" duration-ms="1025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="testOppPipeLine17()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:25 EST" name="testOppPipeLine17" finished-at="2022-02-13T14:04:37 EST" duration-ms="11519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOppPipeLine17 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:37 EST" name="getResult" finished-at="2022-02-13T14:04:37 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOppPipeLine17 status=SUCCESS method=OppertunityTest.testOppPipeLine17()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:37 EST" name="tearDown" finished-at="2022-02-13T14:04:37 EST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:37 EST" name="launchWeb" finished-at="2022-02-13T14:04:39 EST" duration-ms="2205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="testQuarterlySummaryReport19()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:39 EST" name="testQuarterlySummaryReport19" finished-at="2022-02-13T14:04:48 EST" duration-ms="8584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuarterlySummaryReport19 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:48 EST" name="getResult" finished-at="2022-02-13T14:04:48 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testQuarterlySummaryReport19 status=SUCCESS method=OppertunityTest.testQuarterlySummaryReport19()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:48 EST" name="tearDown" finished-at="2022-02-13T14:04:52 EST" duration-ms="4158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:52 EST" name="launchWeb" finished-at="2022-02-13T14:04:53 EST" duration-ms="1043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="testStuckOppReport18()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:04:53 EST" name="testStuckOppReport18" finished-at="2022-02-13T14:05:02 EST" duration-ms="9272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStuckOppReport18 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:05:02 EST" name="getResult" finished-at="2022-02-13T14:05:02 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testStuckOppReport18 status=SUCCESS method=OppertunityTest.testStuckOppReport18()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.OppertunityTest@564fabc8]" started-at="2022-02-13T14:05:02 EST" name="tearDown" finished-at="2022-02-13T14:05:02 EST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.salesforcenew.testCases.OppertunityTest -->
+      <class name="com.salesforcenew.testCases.LoginTest">
+        <test-method is-config="true" signature="driverSetUp()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:35 EST" name="driverSetUp" finished-at="2022-02-13T14:00:35 EST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetUp -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:35 EST" name="launchWeb" finished-at="2022-02-13T14:00:37 EST" duration-ms="1458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="loginTest()[pri:10, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:37 EST" name="loginTest" finished-at="2022-02-13T14:00:40 EST" duration-ms="3610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:40 EST" name="getResult" finished-at="2022-02-13T14:00:40 EST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:10, instance:com.salesforcenew.testCases.LoginTest@515aebb0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:40 EST" name="tearDown" finished-at="2022-02-13T14:00:44 EST" duration-ms="4157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:44 EST" name="launchWeb" finished-at="2022-02-13T14:00:45 EST" duration-ms="1104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="loginErrorMessage()[pri:20, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:45 EST" name="loginErrorMessage" finished-at="2022-02-13T14:00:46 EST" duration-ms="561" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter your password.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter your password.] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.salesforcenew.testCases.LoginTest.loginErrorMessage(LoginTest.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorMessage -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:46 EST" name="getResult" finished-at="2022-02-13T14:00:46 EST" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginErrorMessage status=FAILURE method=LoginTest.loginErrorMessage()[pri:20, instance:com.salesforcenew.testCases.LoginTest@515aebb0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:46 EST" name="tearDown" finished-at="2022-02-13T14:00:46 EST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:46 EST" name="launchWeb" finished-at="2022-02-13T14:00:48 EST" duration-ms="1319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="rememberMe()[pri:30, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:48 EST" name="rememberMe" finished-at="2022-02-13T14:00:55 EST" duration-ms="7562" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.salesforcenew.testCases.LoginTest.rememberMe(LoginTest.java:100)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rememberMe -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:55 EST" name="getResult" finished-at="2022-02-13T14:00:55 EST" duration-ms="125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=rememberMe status=FAILURE method=LoginTest.rememberMe()[pri:30, instance:com.salesforcenew.testCases.LoginTest@515aebb0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:55 EST" name="tearDown" finished-at="2022-02-13T14:00:56 EST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:56 EST" name="launchWeb" finished-at="2022-02-13T14:00:57 EST" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="forgotPassword()[pri:40, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:57 EST" name="forgotPassword" finished-at="2022-02-13T14:00:57 EST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:57 EST" name="getResult" finished-at="2022-02-13T14:00:57 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgotPassword status=SUCCESS method=LoginTest.forgotPassword()[pri:40, instance:com.salesforcenew.testCases.LoginTest@515aebb0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:57 EST" name="tearDown" finished-at="2022-02-13T14:00:57 EST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:57 EST" name="launchWeb" finished-at="2022-02-13T14:00:58 EST" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="validateloginErrorMessage()[pri:50, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:58 EST" name="validateloginErrorMessage" finished-at="2022-02-13T14:00:58 EST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateloginErrorMessage -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:58 EST" name="getResult" finished-at="2022-02-13T14:00:58 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateloginErrorMessage status=SUCCESS method=LoginTest.validateloginErrorMessage()[pri:50, instance:com.salesforcenew.testCases.LoginTest@515aebb0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:00:58 EST" name="tearDown" finished-at="2022-02-13T14:00:58 EST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.salesforcenew.testCases.LoginTest@515aebb0]" started-at="2022-02-13T14:07:07 EST" name="closeDown" finished-at="2022-02-13T14:07:07 EST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.salesforcenew.testCases.LoginTest -->
+      <class name="com.salesforcenew.testCases.RandonScenariosTests">
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:02 EST" name="launchWeb" finished-at="2022-02-13T14:05:04 EST" duration-ms="1137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="blockingAnEvent36()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:04 EST" name="blockingAnEvent36" finished-at="2022-02-13T14:05:10 EST" duration-ms="5922" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Wednesday February 9, 2022']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a201ef0a52d3914e44e7e9082499d838
+*** Element info: {Using=xpath, value=//a[normalize-space()='Wednesday February 9, 2022']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Wednesday February 9, 2022']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a201ef0a52d3914e44e7e9082499d838
+*** Element info: {Using=xpath, value=//a[normalize-space()='Wednesday February 9, 2022']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.salesforcenew.testCases.RandonScenariosTests.blockingAnEvent36(RandonScenariosTests.java:144)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockingAnEvent36 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:10 EST" name="getResult" finished-at="2022-02-13T14:05:10 EST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blockingAnEvent36 status=FAILURE method=RandonScenariosTests.blockingAnEvent36()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:10 EST" name="tearDown" finished-at="2022-02-13T14:05:14 EST" duration-ms="4163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:14 EST" name="launchWeb" finished-at="2022-02-13T14:05:15 EST" duration-ms="1031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="blockingEventWeeklyRecurrance37()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:15 EST" name="blockingEventWeeklyRecurrance37" finished-at="2022-02-13T14:05:21 EST" duration-ms="6481" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Wednesday February 9, 2022']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b435dd04246f3b74003fb56748c8235
+*** Element info: {Using=xpath, value=//a[normalize-space()='Wednesday February 9, 2022']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Wednesday February 9, 2022']"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b435dd04246f3b74003fb56748c8235
+*** Element info: {Using=xpath, value=//a[normalize-space()='Wednesday February 9, 2022']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.salesforcenew.testCases.RandonScenariosTests.blockingEventWeeklyRecurrance37(RandonScenariosTests.java:196)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockingEventWeeklyRecurrance37 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:21 EST" name="getResult" finished-at="2022-02-13T14:05:22 EST" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blockingEventWeeklyRecurrance37 status=FAILURE method=RandonScenariosTests.blockingEventWeeklyRecurrance37()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:22 EST" name="tearDown" finished-at="2022-02-13T14:05:26 EST" duration-ms="4168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:26 EST" name="launchWeb" finished-at="2022-02-13T14:05:27 EST" duration-ms="1385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="verifyEditedLastName34()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:27 EST" name="verifyEditedLastName34" finished-at="2022-02-13T14:05:35 EST" duration-ms="7492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditedLastName34 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:35 EST" name="getResult" finished-at="2022-02-13T14:05:35 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditedLastName34 status=SUCCESS method=RandonScenariosTests.verifyEditedLastName34()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:35 EST" name="tearDown" finished-at="2022-02-13T14:05:35 EST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:35 EST" name="launchWeb" finished-at="2022-02-13T14:05:36 EST" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="verifyFirstNameLastName33()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:36 EST" name="verifyFirstNameLastName33" finished-at="2022-02-13T14:05:44 EST" duration-ms="7718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstNameLastName33 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:44 EST" name="tearDown" finished-at="2022-02-13T14:05:44 EST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:44 EST" name="getResult" finished-at="2022-02-13T14:05:44 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFirstNameLastName33 status=SUCCESS method=RandonScenariosTests.verifyFirstNameLastName33()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:44 EST" name="launchWeb" finished-at="2022-02-13T14:05:45 EST" duration-ms="1154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="verifyTheTabCustoization35()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:45 EST" name="verifyTheTabCustoization35" finished-at="2022-02-13T14:05:49 EST" duration-ms="4155" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[2]/input[1]"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 66788c5446add39828b83c1d789b108e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[2]/input[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[2]/input[1]"}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELLLAPTOP', ip: '192.168.0.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\antot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 66788c5446add39828b83c1d789b108e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[2]/input[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at com.salesforcenew.testCases.RandonScenariosTests.verifyTheTabCustoization35(RandonScenariosTests.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheTabCustoization35 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:49 EST" name="getResult" finished-at="2022-02-13T14:05:49 EST" duration-ms="504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheTabCustoization35 status=FAILURE method=RandonScenariosTests.verifyTheTabCustoization35()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.RandonScenariosTests@49ec71f8]" started-at="2022-02-13T14:05:49 EST" name="tearDown" finished-at="2022-02-13T14:05:49 EST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.salesforcenew.testCases.RandonScenariosTests -->
+      <class name="com.salesforcenew.testCases.LeadsTests">
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:00:58 EST" name="launchWeb" finished-at="2022-02-13T14:01:01 EST" duration-ms="2376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="defaultView22()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:01 EST" name="defaultView22" finished-at="2022-02-13T14:01:17 EST" duration-ms="16813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultView22 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:17 EST" name="getResult" finished-at="2022-02-13T14:01:17 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=defaultView22 status=SUCCESS method=LeadsTests.defaultView22()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:17 EST" name="tearDown" finished-at="2022-02-13T14:01:18 EST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:18 EST" name="launchWeb" finished-at="2022-02-13T14:01:20 EST" duration-ms="2201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="leadsSelectView21()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:20 EST" name="leadsSelectView21" finished-at="2022-02-13T14:01:32 EST" duration-ms="12109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leadsSelectView21 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:32 EST" name="getResult" finished-at="2022-02-13T14:01:32 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=leadsSelectView21 status=SUCCESS method=LeadsTests.leadsSelectView21()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:32 EST" name="tearDown" finished-at="2022-02-13T14:01:32 EST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:32 EST" name="launchWeb" finished-at="2022-02-13T14:01:33 EST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="leadsTab20()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:33 EST" name="leadsTab20" finished-at="2022-02-13T14:01:42 EST" duration-ms="9057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leadsTab20 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:42 EST" name="getResult" finished-at="2022-02-13T14:01:42 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=leadsTab20 status=SUCCESS method=LeadsTests.leadsTab20()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:42 EST" name="tearDown" finished-at="2022-02-13T14:01:42 EST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:42 EST" name="launchWeb" finished-at="2022-02-13T14:01:43 EST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="newButton24()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:43 EST" name="newButton24" finished-at="2022-02-13T14:01:56 EST" duration-ms="12421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newButton24 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:56 EST" name="getResult" finished-at="2022-02-13T14:01:56 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newButton24 status=SUCCESS method=LeadsTests.newButton24()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:01:56 EST" name="tearDown" finished-at="2022-02-13T14:02:00 EST" duration-ms="4165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchWeb()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:02:00 EST" name="launchWeb" finished-at="2022-02-13T14:02:01 EST" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWeb -->
+        <test-method signature="todaysLeads23()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:02:01 EST" name="todaysLeads23" finished-at="2022-02-13T14:02:10 EST" duration-ms="8459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- todaysLeads23 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:02:10 EST" name="getResult" finished-at="2022-02-13T14:02:10 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=todaysLeads23 status=SUCCESS method=LeadsTests.todaysLeads23()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforcenew.testCases.LeadsTests@35cabb2a]" started-at="2022-02-13T14:02:10 EST" name="tearDown" finished-at="2022-02-13T14:02:14 EST" duration-ms="4170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.salesforcenew.testCases.LeadsTests -->
+    </test> <!-- Login test cases -->
+  </suite> <!-- Salesforce -->
+</testng-results>

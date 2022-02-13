@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Salesforce]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login test cases(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.salesforcenew.testCases.RandonScenariosTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="blockingEventWeeklyRecurrance37"/>
+          <include name="closeDown"/>
+          <include name="verifyTheTabCustoization35"/>
+          <include name="launchWeb"/>
+          <include name="blockingAnEvent36"/>
+          <include name="driverSetUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.RandonScenariosTests -->
+      <class name="com.salesforcenew.testCases.ApplicationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="closeDown"/>
+          <include name="createAccReport14"/>
+          <include name="mergeAccounts13"/>
+          <include name="launchWeb"/>
+          <include name="driverSetUp"/>
+          <include name="createAnAccount10"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.ApplicationTest -->
+      <class name="com.salesforcenew.testCases.LoginTest">
+        <methods>
+          <include name="loginErrorMessage"/>
+          <include name="tearDown"/>
+          <include name="closeDown"/>
+          <include name="launchWeb"/>
+          <include name="driverSetUp"/>
+          <include name="rememberMe"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.LoginTest -->
+      <class name="com.salesforcenew.testCases.HomeTests">
+        <methods>
+          <include name="mySettings7"/>
+          <include name="tearDown"/>
+          <include name="closeDown"/>
+          <include name="userMenuDropDown5"/>
+          <include name="launchWeb"/>
+          <include name="driverSetUp"/>
+          <include name="handleMyProfile6"/>
+          <include name="getResult"/>
+          <include name="handleLogOut9"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.HomeTests -->
+    </classes>
+  </test> <!-- Login test cases(failed) -->
+</suite> <!-- Failed suite [Salesforce] -->

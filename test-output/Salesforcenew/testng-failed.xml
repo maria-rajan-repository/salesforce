@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Salesforcenew]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="App(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.salesforcenew.testCases.RandonScenariosTests">
+        <methods>
+          <include name="verifyEditedLastName34"/>
+          <include name="tearDown"/>
+          <include name="blockingEventWeeklyRecurrance37"/>
+          <include name="verifyTheTabCustoization35"/>
+          <include name="driverSetUp"/>
+          <include name="verifyFirstNameLastName33"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.RandonScenariosTests -->
+      <class name="com.salesforcenew.testCases.LeadsTests">
+        <methods>
+          <include name="leadsTab20"/>
+          <include name="newButton24"/>
+          <include name="tearDown"/>
+          <include name="todaysLeads23"/>
+          <include name="leadsSelectView21"/>
+          <include name="driverSetUp"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.LeadsTests -->
+      <class name="com.salesforcenew.testCases.OppertunityTest">
+        <methods>
+          <include name="testStuckOppReport18"/>
+          <include name="tearDown"/>
+          <include name="opprtunity15"/>
+          <include name="testOppPipeLine17"/>
+          <include name="driverSetUp"/>
+          <include name="testQuarterlySummaryReport19"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.OppertunityTest -->
+      <class name="com.salesforcenew.testCases.HomeTests">
+        <methods>
+          <include name="mySettings7"/>
+          <include name="tearDown"/>
+          <include name="userMenuDropDown5"/>
+          <include name="driverSetUp"/>
+          <include name="handleMyProfile6"/>
+          <include name="handleLogOut9"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.HomeTests -->
+      <class name="com.salesforcenew.testCases.NewContactTests">
+        <methods>
+          <include name="checkErrorMessege30"/>
+          <include name="checkRecentlyCreatedContact27"/>
+          <include name="myContacts28"/>
+          <include name="tearDown"/>
+          <include name="createNewContact25"/>
+          <include name="createNewView26"/>
+          <include name="driverSetUp"/>
+          <include name="contactPage29"/>
+          <include name="checkSaveNewButton32"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.NewContactTests -->
+      <class name="com.salesforcenew.testCases.LoginTest">
+        <methods>
+          <include name="loginErrorMessage"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="driverSetUp"/>
+          <include name="validateloginErrorMessage"/>
+          <include name="rememberMe"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.LoginTest -->
+      <class name="com.salesforcenew.testCases.ApplicationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createAccReport14"/>
+          <include name="mergeAccounts13"/>
+          <include name="editView12"/>
+          <include name="driverSetUp"/>
+          <include name="createAnAccount10"/>
+          <include name="createNewView11"/>
+        </methods>
+      </class> <!-- com.salesforcenew.testCases.ApplicationTest -->
+    </classes>
+  </test> <!-- App(failed) -->
+</suite> <!-- Failed suite [Salesforcenew] -->
